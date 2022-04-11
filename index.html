@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quieres ser mi Homero</title>
+    <style>
+        .body{
+           background-color: aqua; 
+           text-align: center;
+        };
+
+        .body__title{
+            color:white;
+        };
+
+        .body__img {
+            width: 100%;
+            border-radius: 50%;
+        };
+    </style>
+</head>
+<body class="body"> 
+<h1 class="body__title">Quieres ser el homero de mi vida</h1> 
+<img src="https://i.pinimg.com/236x/6c/a2/2a/6ca22a95322c2d62d4782225cd0d17e8.jpg" alt="Fototuyyo" class="body__img"/>
+<button id="yes"> Obvio Bobis </button>
+<button id="no"> Nel perro </button>
+
+><script>
+    const vutonSí = document.getElementById("yes");
+    const vutonNo = document.getElementById("no");
+
+    const somosnovios = () => {
+        alert("Now somos Novios");
+        alert("Te voy a querer bien bomnito");
+        location.href = "https://www.youtube.com/watch?v=KcMoWUUVwsQ";
+    };
+
+    const evitarelno = () => {
+        vutonNo.style.position = "absolute";
+        vutonNo.style.top = (Math.random() *window.innerHeight) + "px";
+        vutonNo.style.left = (Math.random() *window.innerWidth) + "px";
+    };
+
+    vutonSí.addEventListener("click", somosnovios);
+    vutonNo.addEventListener("mouseover", evitarelno);
+</script>
+</body>
+</html>
